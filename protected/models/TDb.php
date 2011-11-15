@@ -145,5 +145,13 @@ class TDb extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+        
+        public function beforeSave() {
+            if($this->isNewRecord)
+            {
+                $this->author = Yii::app()->user->uid;
+            }
+            return parent::beforeSave();
+        }
 	
 }
