@@ -41,7 +41,7 @@ $this->menu=array(
 		'date_respons',
 		array(
 		'name'=>'respons_type',
-		'value'=>$model->tipraspuns->name,
+		'value'=>isset($model->tipraspuns)?$model->tipraspuns->name:'',
 		),
 		'note',
 		'dossier',
