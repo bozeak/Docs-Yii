@@ -10,9 +10,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Tdbs</h1>
-
-<?php $this->renderPartial('_search_form'); ?>
+<h1>Registrul documentelor</h1>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'tdb-grid',
