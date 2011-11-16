@@ -72,11 +72,17 @@ $this->menu=array(
 )) ?>
 <table>
 <tr>
-    <td>Id</td>
+    <td>Nr.<br />d/o</td>
+    <td>Nr. de inregistrare<br />Data inregistrarii</td>
+    <td>Solicitant</td>
+    <td>Executorul</td>
 </tr>
 <?php foreach($models as $item): ?>
 <tr>
     <td><?php echo $item->id ?></td>
+    <td><?php echo $item->nr_reg ?><br /><?php echo $item->date_reg ?></td>
+    <td><?php echo $item->elab ?></td>
+    <td><?php echo $item->resp->fullname ?></td>
 </tr>
 <?php endforeach; ?>
 </table>
