@@ -43,7 +43,6 @@ $form = $this->beginWidget('CActiveForm', array (
 		$this->widget('zii.widgets.jui.CJuiDatePicker', array (
                         'attribute'=> 'date_reg',
                         'model'=> $model,
-                        'language'=>'ro',
 			// additional javascript options for the date picker plugin
 			'options' => array (
 				'showAnim' => 'fold',
