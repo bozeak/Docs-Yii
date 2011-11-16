@@ -41,10 +41,9 @@ $form = $this->beginWidget('CActiveForm', array (
 		<?php echo $form->labelEx($model,'date_reg'); ?>
 		<?php		
 		$this->widget('zii.widgets.jui.CJuiDatePicker', array (
-			'name' => 'date_reg',
-                        //'value' => $model->date_reg,
                         'attribute'=> 'date_reg',
-                        'model'=>$model,
+                        'model'=> $model,
+                        'language'=>'ro',
 			// additional javascript options for the date picker plugin
 			'options' => array (
 				'showAnim' => 'fold',
@@ -63,8 +62,6 @@ $form = $this->beginWidget('CActiveForm', array (
 		<?php echo $form->labelEx($model,'date_doc'); ?>
 		<?php		
 		$this->widget('zii.widgets.jui.CJuiDatePicker', array (
-			'name' => 'date_doc',
-                        //'value' => $model->date_doc,
                         'attribute'=> 'date_doc',
                         'model'=>$model,
 			// additional javascript options for the date picker plugin
@@ -132,8 +129,6 @@ $form = $this->beginWidget('CActiveForm', array (
 		<?php echo $form->labelEx($model,'get_exec'); ?>
 		<?php		
 		$this->widget('zii.widgets.jui.CJuiDatePicker', array (
-			'name' => 'get_exec',
-                        //'value' => $model->get_exec,
                         'attribute'=> 'get_exec',
                         'model'=>$model,
 			// additional javascript options for the date picker plugin
@@ -161,8 +156,6 @@ $form = $this->beginWidget('CActiveForm', array (
 		<?php echo $form->labelEx($model,'date_respons'); ?>
 		<?php		
 		$this->widget('zii.widgets.jui.CJuiDatePicker', array (
-			'name' => 'date_respons',
-                        //'value' => $model->date_respons,
                         'attribute'=> 'date_respons',
                         'model'=>$model,
 			// additional javascript options for the date picker plugin

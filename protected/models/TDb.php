@@ -61,6 +61,7 @@ class TDb extends CActiveRecord
 			array('responsabil', 'length', 'max'=>20),
 			array('nr_respons', 'length', 'max'=>150),
 			array('dossier', 'length', 'max'=>50),
+                        //array('date_reg','date_doc','get_exec', 'date_respons', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, subdiv, nr_reg, date_reg, date_doc, elab, id_elab, address, nr_cadastr, tel, content, responsabil, get_exec, nr_respons, date_respons, respons_type, note, dossier', 'safe', 'on'=>'search'),
@@ -149,7 +150,7 @@ class TDb extends CActiveRecord
         public function beforeSave() {
             if($this->isNewRecord)
             {
-                $this->author = Yii::app()->user->uid;
+                $this->author = Yii::app()->user->id;
             }
             return parent::beforeSave();
         }
